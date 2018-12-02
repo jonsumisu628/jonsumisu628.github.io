@@ -6,10 +6,19 @@
     <description>Recent content on My Daily Life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 02 Dec 2018 08:55:01 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Dec 2018 09:15:24 +0900</lastBuildDate>
     
 	<atom:link href="https://jonsumisu628.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://jonsumisu628.github.io/about/</link>
+      <pubDate>Sun, 02 Dec 2018 09:15:24 +0900</pubDate>
+      
+      <guid>https://jonsumisu628.github.io/about/</guid>
+      <description>こんにちは このサイトは某専門学生がAdvent Calendarのネタで使うためだけに作ったものですが、終わった後も気が向いたら更新していきたいと思います</description>
+    </item>
     
     <item>
       <title>WCDI Advent Calendar 2018 5日目</title>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LINK on My Daily Life</title>
+    <link>https://jonsumisu628.github.io/link/</link>
+    <description>Recent content in LINK on My Daily Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 02 Dec 2018 09:28:57 +0900</lastBuildDate>
+    
+	<atom:link href="https://jonsumisu628.github.io/link/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
