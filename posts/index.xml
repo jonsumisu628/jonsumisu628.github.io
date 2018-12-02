@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My Daily Life</title>
+    <link>https://jonsumisu628.github.io/posts/</link>
+    <description>Recent content in Posts on My Daily Life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 02 Dec 2018 08:55:01 +0900</lastBuildDate>
+    
+	<atom:link href="https://jonsumisu628.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WCDI Advent Calendar 2018 5日目</title>
+      <link>https://jonsumisu628.github.io/posts/first-post/</link>
+      <pubDate>Sun, 02 Dec 2018 08:55:01 +0900</pubDate>
+      
+      <guid>https://jonsumisu628.github.io/posts/first-post/</guid>
+      <description>はじめに こんにちは 記念すべき１つ目の記事です。 Aboutにも書いてあるとおり、このブログはAdvent Calenderのネタで使うためだけに作ったものですが、いい感じにできたら普通に使っていこうかなと思っています。
+Advent Calenderというものを最近知ったばかりなのですが、 何かお題を決めて、それを外部からも見れるようにブログなどに記事を書いて自分の登録した日にちに投稿するというものらしく、なにかおもしろいものが書ければとゆっくり考えていたらいつの間にか自分の番がきていました。
+特に面白いことも思い浮かばなかったので、hugoを使ってブログサイトを作ることにしました。
+hugoとは このサイトを見れば分かるのですが、 hugoとは、GO言語で作られた静的ページジェネレータです。 サーバサイドの処理を含まないので、サイトの表示速度が高速で、セキュリティリスクが少ないらしいです。
+hugoのインストール まず初めにhugoをインストールします。自分はArchLinuxを使っているので、
+$ sudo pacman -S hugo  でインストールしました。
+サイト作成までの手順  作業するディレクトリの作成、サイトの作成 作業するようのディレクトリを作成し、サイトを作成します。  $ mkdir hoge $ cd hoge $ hugo new site hogehoge  これで、hogeというディレクトリの中にhogehogeというサイト(ディレクトリ)が作られたと思います。 中に色々入っていますが、何がどういうものなのかは各自調べてください&amp;hellip;
+2.hugoのテーマをインストールする
+このページからテーマをダウンロードすることができます。 すべてのhugoテーマを一度にDownloadすることも可能ですが、時間もかかるし全部はいらないので個別でDownloadします。 気になるテーマがあったら、それをクリックしてDownloadをクリックしてください。 Demoをクリックするとサンプルページを見ることができます。 Downloadを押したらGithubのページに移動するので、themesディレクトリにクローンしてきます。
+$ cd themes $ git clone URL  終わったら、そのテーマを反映させます。 使うテーマはすでに決まっているので、config.tomlの中に
+theme = &amp;quot;hoge&amp;quot;  と記入します。
+3.記事を作成する
+2番目の手順の最後に出てきたconfig.tomlファイルとはなんなのかというと、サイトの設定ファイルです。
+baseurl = &amp;quot;http://xxx.com/&amp;quot; languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;My New Hugo Site&amp;quot;  最初は上記のようになっていると思います。 それぞれ</description>
+    </item>
+    
+  </channel>
+</rss>

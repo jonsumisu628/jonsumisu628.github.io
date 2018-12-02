@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="A new Hugo site.">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:domain" content="https://jonsumisu628.github.io/">
+
+<meta name="twitter:image" content="https://jonsumisu628.github.io/tn.png">
+<meta name="twitter:title" property="og:title" itemprop="title name" content="My Daily Life">
+<meta name="twitter:description" property="og:description" itemprop="description" content="A new Hugo site.">
+<meta name="og:type" content="website">
+<meta name="og:url" content="https://jonsumisu628.github.io/">
+<meta name="og:image" itemprop="image primaryImageOfPage" content="https://jonsumisu628.github.io/tn.png">
+
+<link rel="shortcut icon" href="https://jonsumisu628.github.io/sam.ico" id="favicon">
+<link rel="stylesheet" href="https://jonsumisu628.github.io/css/style.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Didact+Gothic">
+
+
+    
+
+    
+    
+    
+    <title>
+        
+        WCDI Advent Calendar 2018 5日目
+        
+    </title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section" id="title">WCDI Advent Calendar 2018 5日目</div>
+
+        
+<div class="section" id="content">
+    Sun Dec 02, 2018 &#183; 107 words
+    
+    <hr/>
+    
+
+<h3 id="はじめに">はじめに</h3>
+
+<p>こんにちは
+<br>記念すべき１つ目の記事です。
+<br>Aboutにも書いてあるとおり、このブログはAdvent Calenderのネタで使うためだけに作ったものですが、いい感じにできたら普通に使っていこうかなと思っています。</p>
+
+<p>Advent Calenderというものを最近知ったばかりなのですが、
+<br>何かお題を決めて、それを外部からも見れるようにブログなどに記事を書いて自分の登録した日にちに投稿するというものらしく、なにかおもしろいものが書ければとゆっくり考えていたらいつの間にか自分の番がきていました。</p>
+
+<p>特に面白いことも思い浮かばなかったので、hugoを使ってブログサイトを作ることにしました。</p>
+
+<h2 id="hugoとは">hugoとは</h2>
+
+<p><a href="http://www.study-hugo.com/basic/whats-hugo/">このサイト</a>を見れば分かるのですが、
+<br>hugoとは、<strong><em>GO言語で作られた静的ページジェネレータ</em></strong>です。
+<br>サーバサイドの処理を含まないので、サイトの表示速度が高速で、セキュリティリスクが少ない<del>らしい</del>です。</p>
+
+<h2 id="hugoのインストール">hugoのインストール</h2>
+
+<p>まず初めにhugoをインストールします。自分はArchLinuxを使っているので、</p>
+
+<pre><code>$ sudo pacman -S hugo
+</code></pre>
+
+<p>でインストールしました。</p>
+
+<h2 id="サイト作成までの手順">サイト作成までの手順</h2>
+
+<ol>
+<li>作業するディレクトリの作成、サイトの作成
+作業するようのディレクトリを作成し、サイトを作成します。</li>
+</ol>
+
+<pre><code>$ mkdir hoge
+
+$ cd hoge
+
+$ hugo new site hogehoge
+</code></pre>
+
+<p>これで、<code>hoge</code>というディレクトリの中に<code>hogehoge</code>というサイト(ディレクトリ)が作られたと思います。
+<br>中に色々入っていますが、何がどういうものなのかは各自調べてください&hellip;</p>
+
+<p>2.hugoのテーマをインストールする</p>
+
+<p><a href="https://themes.gohugo.io/">このページ</a>からテーマをダウンロードすることができます。
+<br>すべてのhugoテーマを一度にDownloadすることも可能ですが、時間もかかるし全部はいらないので個別でDownloadします。
+<br>気になるテーマがあったら、それをクリックしてDownloadをクリックしてください。
+<br>Demoをクリックするとサンプルページを見ることができます。
+<br>Downloadを押したらGithubのページに移動するので、<code>themes</code>ディレクトリにクローンしてきます。</p>
+
+<pre><code>$ cd themes
+
+$ git clone URL
+</code></pre>
+
+<p>終わったら、そのテーマを反映させます。
+<br>使うテーマはすでに決まっているので、<code>config.toml</code>の中に</p>
+
+<pre><code>theme = &quot;hoge&quot;
+</code></pre>
+
+<p>と記入します。</p>
+
+<p>3.記事を作成する</p>
+
+<p>2番目の手順の最後に出てきた<code>config.toml</code>ファイルとはなんなのかというと、サイトの設定ファイルです。</p>
+
+<pre><code>baseurl = &quot;http://xxx.com/&quot;
+languageCode = &quot;en-us&quot;
+title = &quot;My New Hugo Site&quot;
+</code></pre>
+
+<p>最初は上記のようになっていると思います。
+それぞれ</p>
+
+<table>
+<thead>
+<tr>
+<th align="center">コード</th>
+<th align="center">意味</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">baseurl</td>
+<td align="center">このサイトのURL</td>
+</tr>
+
+<tr>
+<td align="center">languageCode</td>
+<td align="center">このサイトの言語</td>
+</tr>
+
+<tr>
+<td align="center">title</td>
+<td align="center">このサイトのタイトル</td>
+</tr>
+</tbody>
+</table>
+
+<p>ということなので、任意のものに変えます。
+<br>languageCodeは日本語にする場合は<code>ja</code>です。</p>
+
+<p>次に、コンテンツを追加します。</p>
+
+<pre><code>$ hugo new hoge/hoge.md
+</code></pre>
+
+<p>と入力します。これをやると、contentファイルの中に<code>hoge</code>というディレクトリが作られて、その中に<code>hoge.md</code>ファイルが作られます。
+<br><code>hugo</code>コマンドは<code>config.toml</code>が存在する場所で使用します。</p>
+
+<p>作ったフォルダを開くと、</p>
+
+<pre><code>---
+title: &quot;hoge&quot;
+date: 作った日時
+draft: true
+---
+</code></pre>
+
+<p>の３つが書いてあると思います。
+<br><code>title</code>を任意のものに変えます。
+<br><code>draft</code>の<code>true</code>というのは、下書き状態という意味で、このままビルドしてもサイトに表示されません。公開するためにはfalseに書き換えます。
+<br>本文は<code>---</code>の下から書き始めます</p>
+
+<pre><code>$ hugo server
+</code></pre>
+
+<p>記事を書いて保存した後、上記のコマンドでローカルサーバーを立ち上げてプレビューを見ることができます。<code>-D</code>というオプションを付けるとビルドもしてくれます。
+<a href="http://127.0.0.1:1313/にアクセスすると見ることができます。">http://127.0.0.1:1313/にアクセスすると見ることができます。</a></p>
+
+</div>
+
+
+        
+<div class="section bottom-menu">
+    
+<hr />
+<p>
+
+
+    
+        <a href="https://jonsumisu628.github.io/posts">back</a>
+        
+            &#183;
+        
+    
+
+    
+        
+            <a href="https://jonsumisu628.github.io/about">
+                About
+            </a>
+        
+    
+    
+        
+            &#183; 
+            <a href="https://jonsumisu628.github.io/posts">
+                Posts
+            </a>
+        
+            &#183; 
+            <a href="https://jonsumisu628.github.io/link">
+                Link
+            </a>
+        
+    
+    &#183; 
+    <a href="https://jonsumisu628.github.io/">
+        main
+    </a>
+
+</p>
+</div>
+
+
+        <div class="section footer">Call me Sam, a theme for Hugo.</div>
+    </div>
+</body>
+
+</html>
